@@ -14,7 +14,7 @@ Modules - these are the different parts of the website that need to be used or p
 The will contain the following structure:
 _Anything that is not Static will have (Module) at the end of them_
 
-[Static Layout](https://github.com/MrRowey/FAF4.0/wiki/Github-Pages-Layout)
+[Static Layout](https://github.com/MrRowey/FAF4.0/wiki)
 
 This New approach to the website will allow us to cover the 2 purposes of the website that were decided by the association.
 1. To Focus on Acquiring and On-boarding new Player into FAForever (Registration of players, Documentation & Support)
