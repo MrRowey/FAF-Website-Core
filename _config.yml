@@ -3,7 +3,7 @@ description: "Forged Alliance Forever is a community-driven project designed to 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://mrrowey.github.io/FAF4.0" # the base hostname & protocol for your site, e.g. http://example.com
 
-permalink: "/news/:title/" # the default permalink structure for posts
+permalink: "/_pages/news/:title/" # the default permalink structure for posts
 
 plugins:
   - jekyll-postcss-v2
