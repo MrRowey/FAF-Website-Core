@@ -1,9 +1,33 @@
-url: "https://mrrowey.github.io/FAF4.0" # the base hostname & protocol for your site, e.g. http://example.com
+title: "ForgedAllianceForever"
+description: "Forged Alliance Forever is a community-driven project designed to facilitate online play for Supreme Commander: Forged Alliance. Complete with chat, matchmaking, replay vaults, tournaments and ever evolving balance."
 baseurl: "/" # the subpath of your site, e.g. /blog
-title: "ForgedAllianceForever" # the name of your site, e.g. ACME Corp.
+url: "https://mrrowey.github.io/FAF4.0" # the base hostname & protocol for your site, e.g. http://example.com
+
+permalink: "/news/:title/" # the default permalink structure for posts
 
 plugins:
   - jekyll-postcss-v2
+
+collections:
+  news:
+    output: true
+    permalink: "/news/:title/"
+    sort_by: "date"
+    reverse: true
+  pages:
+    output: true
+    permalink: "/:title/"
+
+exclude:
+  - gemfile
+  - gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - tailwind.config.js
+  - .gitignore
 
 postcss:
   cache: false

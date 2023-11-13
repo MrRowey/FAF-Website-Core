@@ -5,6 +5,7 @@ title: "Welcome to Jekyll!"
 
 <section id="Landing">
     <!-- Divider -->
+
     <section class="splat">
         <div class="movingBackground1"></div>
         <div class="movingBackground2"></div>
@@ -24,6 +25,7 @@ title: "Welcome to Jekyll!"
 
 <section id="intro">
     <!-- Divider -->
+
     <section class="splat">
         <div class="movingBackground1"></div>
         <div class="movingBackground2"></div>
@@ -41,6 +43,7 @@ title: "Welcome to Jekyll!"
 
 <section id="features">
     <!-- Divider -->
+
     <section class="splat">
         <div class="movingBackground1"></div>
         <div class="movingBackground2"></div>
@@ -103,6 +106,7 @@ title: "Welcome to Jekyll!"
 </section>
 
 <section id="play">
+
     <section class="splat">
         <div class="movingBackground1"></div>
         <div class="movingBackground2"></div>
