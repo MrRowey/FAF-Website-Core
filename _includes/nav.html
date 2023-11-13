@@ -1,0 +1,111 @@
+<header>
+
+    <!-- Flash Messages For Instant Information accross all pages -->
+    
+    {%- include flashmessage.html -%}
+
+
+    <!-- Social Links -->
+    <nav id="link-navigation" class="linkContainer">
+        <div name="Forum" class="linkNavLinks ">
+            <a href="https://forum.faforever.com" aria-label="FAF Forum">Forum</a>
+        </div>
+        <div name="Wiki" class="linkNavLinks ">
+            <a href="https://wiki.faforever.com/en/home" aria-label="FAF Wiki">Wiki</a>
+        </div>
+        <div name="Discord" class="linkNavLinks ">
+            <a href="https://discord.gg/FCpFXZjGrJ">
+                <i class="fa-brands fa-discord" aria-label="Discord"></i>
+            </a>
+        </div>
+        <div name="Twitch" class="linkNavLinks ">
+            <a href="https://www.twitch.tv/faflive">
+                <i class="fa-brands fa-twitch" aria-label="Twitch"></i>
+            </a>
+        </div>
+        <div name="Twitter-X" class="linkNavLinks ">
+            <a href="https://twitter.com/FAFOfficial_">
+                <i class="fa-brands fa-x-twitter" aria-label="Twitter"></i>
+            </a>
+        </div>
+        <div name="Github" class="linkNavLinks ">
+            <a href="https://github.com/FAForever">
+                <i class="fa-brands fa-github" aria-label="Github"></i>
+            </a>
+        </div>
+        <div name="Facebook" class="linkNavLinks ">
+            <a href="https://www.facebook.com/ForgedAllianceForever">
+                <i class="fa-brands fa-facebook" aria-label="Facebook"></i>
+            </a>
+        </div>
+        <div name="Youtube" class="linkNavLinks">
+            <a href="https://www.youtube.com/forgedallianceforever">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Navigation -->
+    <nav id="main-navigation" class="mainNavContainer">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#">
+                <img id="logo" src="{{site.baseurl}}/assets/images/index/faflogo.png" alt="Forged Alliance Forever Logo">
+            </a>
+        </div>
+
+        <!-- Main Nav -->
+        <div class="mainNav">
+            <a href="index.html"> HOME </a>
+            <a href="news.html"> NEWS </a>
+            <!-- GAME -->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    GAME
+                    <i class="fa fa-caret-down fa-sm"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="pages/game/commands.html">Commands</a>
+                    <a href="pages/game/steamvsfaf.html">Steam vs FAF</a>
+                    <a href="pages/game/ai.html">AI</a>
+                    <a href="pages/game/coop.html">Coop &amp; Missions</a>
+                    <a href="https://faforever.github.io/spooky-db/">Unit Database</a>
+                    <a href="pages/game/patchnotes.html">Patchnotes</a>                        
+                </div>
+            </div>
+            <!-- COMMUNITY -->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    COMMUNITY
+                    <i class="fa fa-caret-down fa-sm"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#contribute">How To Contribute</a>
+                    <a href="#map-showcase">Map Showcase</a>
+                    <a href="#guides">How To Play</a>
+                    <a href="#clans">Clans</a>
+                </div>
+            </div>
+            <!-- COMPETITIVE -->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    COMPETITIVE
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#leaderboards">Leaderboard Rankings</a>
+                    <a href="#division">Divisions</a>
+                    <a href="#fame">Hall of Fame</a>
+                    <a href="#lots">Lots Leaderboard</a>
+                    <a href="#tournament">Tournaments</a>
+                </div>
+            </div>
+            <a href=""> DOWNLOAD </a>
+        </div>
+
+        <!-- Login & Register -->
+        <div class="mainNav">
+            <a href="#login">LOGIN / REGISTER</a>
+        </div>
+    </nav>
+</header>
