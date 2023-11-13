@@ -1,11 +1,7 @@
----
----
 /* Tailwind Import */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 /* Website Styles */
 /* Imporing Google Fonts */
