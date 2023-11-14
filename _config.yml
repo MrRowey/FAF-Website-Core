@@ -1,7 +1,8 @@
 title: "ForgedAllianceForever"
 description: "Forged Alliance Forever is a community-driven project designed to facilitate online play for Supreme Commander: Forged Alliance. Complete with chat, matchmaking, replay vaults, tournaments and ever evolving balance."
-baseurl: "/"
-url: "https://mrrowey.github.io/FAF-Website-Core/" 
+url: "https://mrrowey.github.io/FAF-Website-Core" 
+
+css_dir: "assets/css"
 
 plugins:
   - jekyll-postcss-v2
