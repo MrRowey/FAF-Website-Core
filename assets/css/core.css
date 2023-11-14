@@ -15,6 +15,7 @@
     /* Colour's */
     --Primary-Color: #111;
     --Secondary-Color: #ec9d36;
+    --Default-Text: #fff;
     
     /* Fonts */
     --Primary-Font: 'Nunito', sans-serif;
@@ -29,7 +30,7 @@
     /* Links */
     --link-main: #fff;
     --link-hover: #ec9d36;
-    --link-dropdown: #999999;
+    --link-dropdown: #999;
 
     /* Alerts  */
     --danger-main: #fe3939;
@@ -59,7 +60,7 @@ body {
     background-image: url(../images/index/background.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-color: #000;
+    background-color: var(--Primary-Color);
     background-position: center center;
     margin: 0 0 0 0;
     padding-top: 0;
@@ -68,12 +69,15 @@ body {
 
 /* Defaults Font Size */
 h1 {
- font-size: var(--h1);
+    color: var(--Default-Text);
+    font-size: var(--h1);
 }
 h2 {
+    color: var(--Default-Text);
     font-size: var(--h2);
 }
 p {
+    color: var(--Default-Text);
     font-size: var(--p);
 }
 
@@ -242,7 +246,7 @@ p {
     color: var(--link-hover);
 }
 i {
-    color: #fff;
+    color: var(--Default-Text);
 }
 i:hover {
     color: var(--link-hover);
@@ -288,7 +292,7 @@ i:hover {
     font-size: 18px;
     border: none;
     outline: none;
-    color: #fff;
+    color: var(--Default-Text);
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -304,7 +308,7 @@ i:hover {
 }
 .dropdown-content a {
     float: none;
-    color: #fff;
+    color: var(--Default-Text);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -351,7 +355,7 @@ i:hover {
     font-weight: bolder;
     letter-spacing: 6px;
     padding: 0.5em 0;
-    color: #fff;
+    color: var(--Default-Text);
     text-align: center;
 }
 .landing-page-subtitle {
@@ -359,7 +363,7 @@ i:hover {
     font-weight: bolder;
     letter-spacing: 6px;
     padding: 0.5em 0;
-    color: #fff;
+    color: var(--Default-Text);
     text-align: center;
 }
 
@@ -382,7 +386,7 @@ i:hover {
 .introContainer {
     grid-column: span 12;
     text-align: center;
-    color: #fff;
+    color: var(--Default-Text);
 }
 .introParagraph {
     font-size: 20px;
@@ -411,7 +415,7 @@ i:hover {
     text-align: left;
     padding: 3.5em;
     opacity: 0.9;
-    color: #fff;
+    color: var(--Default-Text);
     border-radius: 10px 0 0 10px;
 }
 .featureRightImage {
@@ -443,7 +447,7 @@ i:hover {
     text-align: left;
     padding: 3.5em;
     opacity: 0.9;
-    color: #fff;
+    color: var(--Default-Text);
     border-radius: 0 10px 10px 0;
 }
 .featureLeftImage {
@@ -490,7 +494,7 @@ i:hover {
     background-size: cover;
     background-position: center center;
     text-align: left;
-    color: #fff;
+    color: var(--Default-Text);
 }
 .playnow h1, .playnow h2 {
     text-shadow: 0 2px 4px black, 0 8px 16px black;
@@ -506,7 +510,7 @@ i:hover {
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
-    color: #111;
+    color: var(--Primary-Color);
     font-size: 16px;
 }
 .highlightedText {
