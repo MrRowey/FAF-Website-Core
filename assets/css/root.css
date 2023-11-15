@@ -16,8 +16,8 @@
     --Secondary-Font: 'Open Sans', sans-serif;
    
     /* Font Sizes */
-    --h1: 28px;
-    --h2: 26px;
+    --h1: 26px;
+    --h2: 20px;
     --p: 16px;
 
     /* Colours */
@@ -52,6 +52,7 @@ body {
     background-position: center center;
     margin: 0 0 0 0;
     padding-top: 0;
+    min-height: 100vh;
 }
 h1 {
     color: var(--Default-Text);
@@ -358,4 +359,21 @@ i:hover {
 .footerItem a {
     color: #b2b2b2;
     text-decoration: none;
+}
+
+
+
+
+/* Misc */
+.featureButton {
+    background-color: var(--Secondary-Color);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--Primary-Color);
+    font-size: 16px;
+    font-weight: 900;
+}
+.highlightedText {
+    color: var(--Secondary-Color);
 }

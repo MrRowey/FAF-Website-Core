@@ -5,6 +5,11 @@
 
 /* ------ Home Content ------ */
 
+.news-container{
+    display: grid;
+    height: max-content;
+}
+
 /* Landing Page */
 .landing-page {
     background-image: url(../images/index/landing.jpg);
@@ -125,6 +130,7 @@
     min-width: 200px;
     min-height: 200px;
     border-radius: 10px 0 0 10px;
+    
 }
 
 .featureBottom {
@@ -133,6 +139,7 @@
 
 .coop {
     background-image: url(../images/index/coop.jpg);
+    box-shadow: 50px 0 0 0 var(--Primary-Color);
 }
 .mods {
     background-image: url(../images/index/creative.jpg);
@@ -168,17 +175,4 @@
 .playnowContainer {
     grid-column: span 12;
     padding: 1em;
-}
-
-/* Misc */
-.featureButton {
-    background-color: var(--Secondary-Color);
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--Primary-Color);
-    font-size: 16px;
-}
-.highlightedText {
-    color: var(--Secondary-Color);
 }
