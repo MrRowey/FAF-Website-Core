@@ -575,13 +575,11 @@ i:hover {
     overflow: hidden;
     position: relative;
     align-items: center;
-    margin: 1vw 1vw 1vw 1vw;
+    margin: 1vw 1vw .25vw 1vw;
     padding: .5vw;
     background-color: var(--Primary-Color);
     border-radius: 10px;
 }
-
-
 
 embed{
     width: 100%;
@@ -667,7 +665,7 @@ embed{
     overflow: hidden;
     position: relative;
     align-items: center;
-    margin: 2vw 2vw .5vw 2vw;
+    margin: 2vw 2vw 2vw 2vw;
     padding: 1.5vw;
     background-color: var(--Primary-Color);
     border-radius: 10px;
