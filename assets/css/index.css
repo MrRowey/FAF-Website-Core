@@ -1,4 +1,4 @@
-@import url('/assets/css/root.css');
+@import url('{{ site.baseurl}}/assets/css/root.css');
 
 
 
