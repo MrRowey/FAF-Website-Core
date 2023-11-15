@@ -3,57 +3,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Website Styles */
-/* Imporing Google Fonts */
+/* Base CSS */
+
+/* Imporing Google Fonts & FontAwesome */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Ubuntu&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
-/* ------ GLOBAL ------ */
-
-/* Variables */
+/*  Variables */
 :root {
-    /* Colour's */
-    --Primary-Color: #111;
-    --Secondary-Color: #ec9d36;
-    --Default-Text: #fff;
-    
     /* Fonts */
-    --Primary-Font: 'Nunito', sans-serif;
+    --Primary-Font: 'Open Sans', sans-serif;
     --Secondary-Font: 'Open Sans', sans-serif;
-
+   
     /* Font Sizes */
     --h1: 28px;
     --h2: 26px;
     --p: 16px;
 
-
-    /* Links */
+    /* Colours */
+    --Primary-Color: #111;
+    --Secondary-Color: #ec9d36;
+    --Default-Text: #fff;
     --link-main: #fff;
     --link-hover: #ec9d36;
     --link-dropdown: #999;
-
-    /* Alerts  */
     --danger-main: #fe3939;
     --danger-seconday: #ffabab;
-
     --warning-main: #faa318;
     --warning-seconday: #ffe6b3;
-
     --success-main: #28c028;
     --success-seconday: #b3ffb3;
-
     --info-main: #26c0c0;
     --info-seconday: #b3ffff;
-
-    /* Splash */
     --splat-1: #8e0800;
     --splat-2: #ffa300;
-
 }
 
 * {
-   margin: 0px; 
-   font-family: var(--Primary-Font);
+    margin: 0px; 
+    font-family: var(--Primary-Font);
 }
 
 body {
@@ -65,9 +53,6 @@ body {
     margin: 0 0 0 0;
     padding-top: 0;
 }
-
-
-/* Defaults Font Size */
 h1 {
     color: var(--Default-Text);
     font-size: var(--h1);
@@ -81,7 +66,7 @@ p {
     font-size: var(--p);
 }
 
-/* ------ Flash Messages ------ */
+/* Flash Alerts */
 .danger {
     display: grid;
     grid-template-columns: 65px 100%;
@@ -214,7 +199,6 @@ p {
     }
 }
 
-
 /* ------ Social NAVBAR ------ */
 
 /* Button */
@@ -224,7 +208,6 @@ p {
     border-radius: 10px;
     text-decoration: none;
 }
-
 .linkContainer {
     display: grid;
     grid-template-columns: repeat(12, max-content);
@@ -251,7 +234,6 @@ i {
 i:hover {
     color: var(--link-hover);
 }
-
 
 /* ------ Main NAVBAR ------ */
 
@@ -334,187 +316,6 @@ i:hover {
 #logo {
     width:104px;
     height:60px;
-}
-
-
-/* ------ Home Content ------ */
-
-/* Landing Page */
-.landing-page {
-    background-image: url(../images/index/landing.jpg);
-    display: grid;
-    grid-template-columns: 1fr;
-    background-position: center;
-    background-size: cover;
-    padding: 9.5% 0;
-    letter-spacing: 1.2px;
-    text-shadow: 0 0 7.5px black, 0 0 7.5px black;
-}
-.landing-page-title {
-    font-size: 36px;
-    font-weight: bolder;
-    letter-spacing: 6px;
-    padding: 0.5em 0;
-    color: var(--Default-Text);
-    text-align: center;
-}
-.landing-page-subtitle {
-    font-size: 30px;
-    font-weight: bolder;
-    letter-spacing: 6px;
-    padding: 0.5em 0;
-    color: var(--Default-Text);
-    text-align: center;
-}
-
-/* Intro */
-.intro {
-    display: grid;
-    grid-template-columns: repeat(12,1f);
-    grid-template-rows: 1fr;
-    grid-auto-columns: auto;
-    transition: 0.4s;
-    gap: 0;
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    background-image: url(../images/index/blackbg.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 8em;
-}
-.introContainer {
-    grid-column: span 12;
-    text-align: center;
-    color: var(--Default-Text);
-}
-.introParagraph {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 1.2px;
-    padding: 0.5em 0;
-}
-
-/* Features */
-.featureRight {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    grid-auto-columns: auto;
-    transition: 0.4s;
-    gap: 0;
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    margin: 3vw 2vw 0 20vw;
-}
-.featureRightContainer {
-    grid-column: span 6;
-    background-color: var(--Primary-Color);
-    text-align: left;
-    padding: 3.5em;
-    opacity: 0.9;
-    color: var(--Default-Text);
-    border-radius: 10px 0 0 10px;
-}
-.featureRightImage {
-    grid-column: span 6;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    min-width: 200px;
-    min-height: 200px;
-    border-radius: 0 10px 10px 0;
-}
-
-.featureLeft {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    grid-auto-columns: auto;
-    transition: 0.4s;
-    gap: 0;
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    margin: 3vw 20vw 0 2vw;
-}
-.featureLeftContainer {
-    grid-column: span 6;
-    background-color: var(--Primary-Color);
-    text-align: left;
-    padding: 3.5em;
-    opacity: 0.9;
-    color: var(--Default-Text);
-    border-radius: 0 10px 10px 0;
-}
-.featureLeftImage {
-    grid-column: span 6;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    min-width: 200px;
-    min-height: 200px;
-    border-radius: 10px 0 0 10px;
-}
-
-.featureBottom {
-    margin: 0 0 2vw 0;
-}
-
-.coop {
-    background-image: url(../images/index/coop.jpg);
-}
-.mods {
-    background-image: url(../images/index/creative.jpg);
-}
-.community {
-    background-image: url(../images/index/community.jpg);
-}
-.competitive {
-    background-image: url(../images/index/strategic.jpg);
-}
-
-/* Play Now */
-.playnow {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 1fr;
-    grid-auto-columns: auto;
-    transition: 0.4s;
-    gap: 0;
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    padding: 10vw 5vw;
-    background-image: url(../images/index/bannerfooter.jpg);
-    background-size: cover;
-    background-position: center center;
-    text-align: left;
-    color: var(--Default-Text);
-}
-.playnow h1, .playnow h2 {
-    text-shadow: 0 2px 4px black, 0 8px 16px black;
-}
-.playnowContainer {
-    grid-column: span 12;
-    padding: 1em;
-}
-
-/* Misc */
-.featureButton {
-    background-color: var(--Secondary-Color);
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--Primary-Color);
-    font-size: 16px;
-}
-.highlightedText {
-    color: var(--Secondary-Color);
 }
 
 /* Footer */
