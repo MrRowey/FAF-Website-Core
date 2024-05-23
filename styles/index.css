@@ -1,4 +1,5 @@
 @import 'root.css';
+@import 'components/nav.module.css';
 
 .GridContainer {
   display: grid;
