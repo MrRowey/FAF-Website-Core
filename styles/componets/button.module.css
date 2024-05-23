@@ -1,0 +1,9 @@
+.featureButton {
+  background-color: var(--Secondary-Color);
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--Primary-Color);
+  font-size: 16px;
+  font-weight: 900;
+}

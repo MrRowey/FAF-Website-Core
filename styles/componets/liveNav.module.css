@@ -1,0 +1,33 @@
+.button {
+  background-color: var(--Secondary-Color);
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.linkContainer {
+  display: grid;
+  grid-template-columns: repeat(12, max-content);
+  grid-template-rows: minmax(10px, 1fr);
+  background-color: var(--Primary-Color);
+  padding: 0.15em;
+  position: relative;
+  justify-content: end;
+  place-items: center;
+  z-index: 2;
+}
+.linkNavLinks {
+  padding: 0.25em 0.75em;
+}
+.linkNavLinks a {
+  text-decoration: none;
+  color: var(--link-main);
+}
+.linkNavLinks a:hover {
+  color: var(--link-hover);
+}
+i {
+  color: var(--Default-Text);
+}
+i:hover {
+  color: var(--link-hover);
+}
