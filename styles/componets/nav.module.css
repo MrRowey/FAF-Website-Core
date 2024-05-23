@@ -1,0 +1,107 @@
+.NavContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 5fr 1fr;
+  grid-template-rows: auto;
+  background-color: var(--Primary-Color);
+  justify-content: center;
+  padding: 10px;
+  z-index: 2;
+}
+
+.LiveNavContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 5fr 1fr;
+  grid-template-rows: auto;
+  background-color: var(--Primary-Color);
+  justify-content: center;
+  padding: 10px;
+  z-index: 2;
+}
+
+.MainNavContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 5fr 1fr;
+  grid-template-rows: auto;
+  background-color: var(--Primary-Color);
+  justify-content: center;
+  padding: 10px;
+  z-index: 2;
+}
+
+.SocialsNavContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 5fr 1fr;
+  grid-template-rows: auto;
+  background-color: var(--Primary-Color);
+  justify-content: center;
+  padding: 10px;
+  z-index: 2;
+}
+
+.mainNavContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 5fr 1fr;
+  grid-template-rows: auto;
+  background-color: var(--Primary-Color);
+  justify-content: center;
+  padding: 10px;
+  z-index: 2;
+}
+.mainNav {
+  overflow: hidden;
+  background-color: var(--Primary-Color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainNav a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.mainNav a:hover {
+  background-color: var(--link-dropdown);
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: var(--Default-Text);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--Primary-Color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+.dropdown-content a {
+  float: none;
+  color: var(--Default-Text);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: var(--link-dropdown);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--link-hover);
+}
