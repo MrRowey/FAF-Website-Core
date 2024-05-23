@@ -1,3 +1,13 @@
+.NavContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 5fr 1fr;
+  grid-template-rows: auto;
+  background-color: var(--Primary-Color);
+  justify-content: center;
+  padding: 10px;
+  z-index: 2;
+}
+
 .mainNavContainer {
   display: grid;
   grid-template-columns: 0.5fr 5fr 1fr;
