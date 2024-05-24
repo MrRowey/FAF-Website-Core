@@ -5,23 +5,35 @@
     <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body class="GridContainer">
-    <section class="NavContainer">
+    <div class="NavBar">
+        <div class="NavContainer">
+            <div class="NavLogo">
+                <a class="NavLogoIcon" href="">
+                    <img src="/assets/images/faflogo.svg">    
+                </a>
+            </div>
+            <div role="navigation" class="NavSection">
+                <div class="LiveNav">
+                    <a href="https://github.com/MrRowey" title></a>
+                </div>
+                <div class="MainNav"></div>
+
+            </div>
+        </div>
+    
         <nav class="LiveNavContainer" id="liveNav">
-            <ul>
-                <li>Live Games</li>
-                <li>Replays</li>
-                <li>Leaderboards</li>
-                <li>Forum</li>
-                <li>Wiki</li>
-                <li>Clans</li>
-                <li>Account</li>
-            </ul>
+                <a class="LiveNavLinkBattle" href="#">Live Games</a>
+                <a class="LiveNavLinkReplay" href="#">Replays</a>
+                <a class="LiveNavLinkLeaderboard" href="#">Leaderboard</a>
+                <a class="LiveNavLinkForum" href="#">Forum</a>
+                <a class="LiveNavLinkWiki" href="#">Wiki</a>
+                <a class="LiveNavLinkClan" href="#">Clans</a>
+                <a class="LiveNavLinkAccount" href="#">Account</a>
         </nav>
         <nav class="MainNavContainer" id="mainnav">
-            <ul>
-                <li>Home</li>
-                <li>Information
-                    <ul>
+                <a>Home</a>
+                <a>Information</a>
+                    <!--<ul>
                         <li>News</li>
                         <li>Guides</li>
                         <li>Commands</li>
@@ -32,37 +44,32 @@
                         <li>Coop</li>
                         <li>Code of Conduct</li>
                         <li>FAF Rules</li>
-                    </ul>
-                </li>
-                <li>Development
-                    <ul>
+                    </ul>-->
+                <a>Development</a>
+                    <!--<ul>
                         <li>Overview</li>
                         <li>AI</li>
                         <li>Balance</li>
                         <li>Teams</li>
                         <li>Association</li>
-                    </ul>
-                </li>
-                <li>Donate</li>
-                <li>Play</li>
-            </ul>
+                    </ul>-->
+                <a>Donate</a>
+                <a>Play</a>
         </nav>
-        <nav id="socails">
-            <ul>
-                <li>discord</li>
-                <li>youtube</li>
-                <li>twitter</li>
-                <li>github</li>
-            </ul>
+        <nav class="SocialsContainer" id="socails">
+            <a href="https://discord.gg/Kq6JBpvPge"><img src="/assets/images/discord.svg"></a>
+            <a href="https://www.youtube.com/forgedallianceforever"><img src="/assets/images/youtube.svg"></a>
+            <a href="https://www.twitch.tv/directory/category/supreme-commander-forged-alliance"><img src="/assets/images/twitch.svg"></a>
+            <a href="https://github.com/FAForever"><img src="/assets/images/github.svg"></a>
         </nav>
-    </section>
-    <main>
+    </div>
+    <main class="ContentContainer">
         <section>
             <h1>Home</h1>
             <p>Home page</p>
         </section>
     </main>
-    <footer>
+    <footer class="FooterContainer">
         <p>Footer</p>
     </footer>
 </body>

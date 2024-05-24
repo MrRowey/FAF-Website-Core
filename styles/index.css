@@ -1,9 +1,166 @@
-@import 'root.css';
-@import 'components/nav.module.css';
+@import "root.css";
+@import "components/nav.module.css";
+
+img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .GridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 0.75fr 2fr 0.75fr;
+  grid-template-rows: auto 0.75fr 1fr;
   grid-gap: 20px;
-  padding: 20px;
+}
+
+.NavContainer {
+  grid-row: 1/ -1;
+}
+
+.ContentContainer {
+  grid-row: 2 /-1;
+}
+
+.FooterContainer {
+  grid-row: 3 / -1;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+.li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.NavBar {
+  display: grid;
+  grid-template-columns: 0.75fr 2fr 0.75fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+.NavContainer {
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  height: 104px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+}
+
+.NavLogo {
+  z-index: 100;
+  flex: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.NavLogoIcon {
+  opacity: 0.9;
+  filter: none;
+  width: 160px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.NavLogoIcon img {
+  margin-top: 3px;
+  width: 100px;
+}
+
+.LiveNavContainer {
+  overflow: hidden;
+  grid-column: 2;
+  justify-content: center;
+  display: flex;
+}
+
+.LiveNavContainer a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 14px 16px 30px;
+  margin: 15px 1px 2px 1px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.MainNavContainer {
+  overflow: hidden;
+  grid-column: 2;
+  grid-row: 2;
+  justify-content: center;
+  display: flex;
+}
+
+.MainNavContainer a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.SocialsContainer {
+  grid-column: 3;
+  grid-row: 2;
+  justify-content: center;
+  display: flex;
+}
+
+.LiveNavLinkBattle,
+.LiveNavLinkReplay,
+.LiveNavLinkLeaderboard,
+.LiveNavLinkForum,
+.LiveNavLinkWiki,
+.LiveNavLinkClan,
+.LiveNavLinkAccount {
+  background-position: 10px;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+}
+
+.LiveNavLinkBattle {
+  background-image: url(../assets/images/swords.svg);
+}
+
+.LiveNavLinkReplay {
+  background-image: url(../assets/images/replays.svg);
+}
+
+.LiveNavLinkLeaderboard {
+  background-image: url(../assets/images/leaderboard.svg);
+}
+
+.LiveNavLinkForum {
+  background-image: url(../assets/images/forum.svg);
+}
+
+.LiveNavLinkWiki {
+  background-image: url(../assets/images/wiki.svg);
+}
+
+.LiveNavLinkClan {
+  background-image: url(../assets/images/clan.svg);
+}
+
+.LiveNavLinkAccount {
+  background-image: url(../assets/images/account.svg);
 }

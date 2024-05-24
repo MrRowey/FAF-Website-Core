@@ -1,33 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Ubuntu&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Ubuntu&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
 :root {
-  /* Fonts */
-  --Primary-Font: 'Open Sans', sans-serif;
-  --Secondary-Font: 'Open Sans', sans-serif;
-
-  /* Font Sizes */
-  --h1: 26px;
-  --h2: 20px;
-  --p: 16px;
-
-  /* Colours */
-  --Primary-Color: #111;
-  --Secondary-Color: #ec9d36;
-  --Default-Text: #fff;
-  --link-main: #fff;
-  --link-hover: #ec9d36;
-  --link-dropdown: #999;
-  --danger-main: #fe3939;
-  --danger-seconday: #ffabab;
-  --warning-main: #faa318;
-  --warning-seconday: #ffe6b3;
-  --success-main: #28c028;
-  --success-seconday: #b3ffb3;
-  --info-main: #26c0c0;
-  --info-seconday: #b3ffff;
-  --splat-1: #8e0800;
-  --splat-2: #ffa300;
+  --nav-BG: #333;
+  --PrimaryBackground: #111;
 }
 
 * {
@@ -35,14 +11,12 @@
   font-family: var(--Primary-Font);
 }
 body {
-  background-image: url(../images/index/background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: var(--Primary-Color);
-  background-position: center center;
-  margin: 0 0 0 0;
-  padding-top: 0;
-  min-height: 100vh;
+  background-color: var(--PrimaryBackground);
+  color: #333;
+  letter-spacing: -1px;
+  font-family: poppins, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
 }
 h1 {
   color: var(--Default-Text);
