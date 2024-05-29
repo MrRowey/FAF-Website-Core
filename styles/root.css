@@ -14,7 +14,7 @@ body {
   background-color: var(--PrimaryBackground);
   color: #333;
   letter-spacing: -1px;
-  font-family: poppins, sans-serif;
+  font-family: Ubuntu, sans-serif;
   font-size: 18px;
   line-height: 20px;
 }

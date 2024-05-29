@@ -98,6 +98,12 @@ img {
   margin: 15px 1px 2px 1px;
   text-decoration: none;
   font-size: 14px;
+  border-radius: 5px;
+}
+
+.LiveNavContainer a:hover {
+  color: #111;
+  background-color: #eee;
 }
 
 .MainNavContainer {
@@ -125,42 +131,56 @@ img {
   display: flex;
 }
 
-.LiveNavLinkBattle,
-.LiveNavLinkReplay,
-.LiveNavLinkLeaderboard,
-.LiveNavLinkForum,
-.LiveNavLinkWiki,
-.LiveNavLinkClan,
-.LiveNavLinkAccount {
+.Battle,
+.Replay,
+.Leaderboard,
+.Forum,
+.Wiki,
+.Clan,
+.Account {
   background-position: 10px;
   background-repeat: no-repeat;
   background-size: 15px 15px;
 }
 
-.LiveNavLinkBattle {
-  background-image: url(../assets/images/swords.svg);
+.Battle {
+  background-image: url(../assets/images/icons/livenav/swords-White.svg);
 }
 
-.LiveNavLinkReplay {
+.Battle:hover {
+  background-image: url(../assets/images/icons/livenav/swords-Black.svg);
+}
+
+.Replay {
   background-image: url(../assets/images/replays.svg);
 }
 
-.LiveNavLinkLeaderboard {
+.Leaderboard {
   background-image: url(../assets/images/leaderboard.svg);
 }
 
-.LiveNavLinkForum {
+.Forum {
   background-image: url(../assets/images/forum.svg);
 }
 
-.LiveNavLinkWiki {
+.Wiki {
   background-image: url(../assets/images/wiki.svg);
 }
 
-.LiveNavLinkClan {
+.Clan {
   background-image: url(../assets/images/clan.svg);
 }
 
-.LiveNavLinkAccount {
+.Account {
   background-image: url(../assets/images/account.svg);
+}
+
+.Battle:hover,
+.Replay:hover,
+.Leaderboard:hover,
+.Forum:hover,
+.Wiki:hover,
+.Clan:hover,
+.Account:hover {
+  fill: #111;
 }
