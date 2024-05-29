@@ -1,5 +1,5 @@
 @import "root.css";
-@import "components/nav.module.css";
+@import "componets/nav.module.css";
 
 img {
   max-width: 100%;
@@ -143,10 +143,19 @@ img {
   background-size: 15px 15px;
 }
 
+.Account:hover,
+.Clan:hover,
+.Wiki:hover,
+.Forum:hover,
+.Leaderboard:hover,
+.Replay:hover,
+.Battle:hover {
+  transition: 0.3s ease;
+}
+
 .Battle {
   background-image: url(../assets/images/icons/livenav/swords-White.svg);
 }
-
 .Battle:hover {
   background-image: url(../assets/images/icons/livenav/swords-Black.svg);
 }
@@ -154,7 +163,6 @@ img {
 .Replay {
   background-image: url(../assets/images/icons/livenav/replay-White.svg);
 }
-
 .Replay:hover {
   background-image: url(../assets/images/icons/livenav/replay-Black.svg);
 }
@@ -162,7 +170,6 @@ img {
 .Leaderboard {
   background-image: url(../assets/images/icons/livenav/leaderboard-White.svg);
 }
-
 .Leaderboard:hover {
   background-image: url(../assets/images/icons/livenav/leaderboard-Black.svg);
 }
@@ -170,7 +177,6 @@ img {
 .Forum {
   background-image: url(../assets/images/icons/livenav/forum-White.svg);
 }
-
 .Forum:hover {
   background-image: url(../assets/images/icons/livenav/forum-Black.svg);
 }
@@ -178,7 +184,6 @@ img {
 .Wiki {
   background-image: url(../assets/images/icons/livenav/wiki-white.svg);
 }
-
 .Wiki:hover {
   background-image: url(../assets/images/icons/livenav/wiki-black.svg);
 }
@@ -186,7 +191,6 @@ img {
 .Clan {
   background-image: url(../assets/images/icons/livenav/clan-White.svg);
 }
-
 .Clan:hover {
   background-image: url(../assets/images/icons/livenav/clan-Black.svg);
 }
@@ -194,17 +198,6 @@ img {
 .Account {
   background-image: url(../assets/images/icons/livenav/account-white.svg);
 }
-
 .Account:hover {
   background-image: url(../assets/images/icons/livenav/account-black.svg);
-}
-
-.Battle:hover,
-.Replay:hover,
-.Leaderboard:hover,
-.Forum:hover,
-.Wiki:hover,
-.Clan:hover,
-.Account:hover {
-  fill: #111;
 }

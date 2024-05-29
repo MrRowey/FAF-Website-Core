@@ -1,33 +1,23 @@
-.button {
-  background-color: var(--Secondary-Color);
-  padding: 5px;
-  border-radius: 10px;
+.LiveNavContainer {
+  overflow: hidden;
+  grid-column: 2;
+  justify-content: center;
+  display: flex;
+}
+
+.LiveNavContainer a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 14px 16px 30px;
+  margin: 15px 1px 2px 1px;
   text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
 }
-.linkContainer {
-  display: grid;
-  grid-template-columns: repeat(12, max-content);
-  grid-template-rows: minmax(10px, 1fr);
-  background-color: var(--Primary-Color);
-  padding: 0.15em;
-  position: relative;
-  justify-content: end;
-  place-items: center;
-  z-index: 2;
-}
-.linkNavLinks {
-  padding: 0.25em 0.75em;
-}
-.linkNavLinks a {
-  text-decoration: none;
-  color: var(--link-main);
-}
-.linkNavLinks a:hover {
-  color: var(--link-hover);
-}
-i {
-  color: var(--Default-Text);
-}
-i:hover {
-  color: var(--link-hover);
+
+.LiveNavContainer a:hover {
+  color: #111;
+  background-color: #eee;
 }
