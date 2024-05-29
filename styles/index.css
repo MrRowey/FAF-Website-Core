@@ -152,27 +152,51 @@ img {
 }
 
 .Replay {
-  background-image: url(../assets/images/replays.svg);
+  background-image: url(../assets/images/icons/livenav/replay-White.svg);
+}
+
+.Replay:hover {
+  background-image: url(../assets/images/icons/livenav/replay-Black.svg);
 }
 
 .Leaderboard {
-  background-image: url(../assets/images/leaderboard.svg);
+  background-image: url(../assets/images/icons/livenav/leaderboard-White.svg);
+}
+
+.Leaderboard:hover {
+  background-image: url(../assets/images/icons/livenav/leaderboard-Black.svg);
 }
 
 .Forum {
-  background-image: url(../assets/images/forum.svg);
+  background-image: url(../assets/images/icons/livenav/forum-White.svg);
+}
+
+.Forum:hover {
+  background-image: url(../assets/images/icons/livenav/forum-Black.svg);
 }
 
 .Wiki {
-  background-image: url(../assets/images/wiki.svg);
+  background-image: url(../assets/images/icons/livenav/wiki-white.svg);
+}
+
+.Wiki:hover {
+  background-image: url(../assets/images/icons/livenav/wiki-black.svg);
 }
 
 .Clan {
-  background-image: url(../assets/images/clan.svg);
+  background-image: url(../assets/images/icons/livenav/clan-White.svg);
+}
+
+.Clan:hover {
+  background-image: url(../assets/images/icons/livenav/clan-Black.svg);
 }
 
 .Account {
-  background-image: url(../assets/images/account.svg);
+  background-image: url(../assets/images/icons/livenav/account-white.svg);
+}
+
+.Account:hover {
+  background-image: url(../assets/images/icons/livenav/account-black.svg);
 }
 
 .Battle:hover,
