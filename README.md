@@ -2,47 +2,45 @@
 
 ## About the FAForever Website
 
-The FAF Website has got to the point where it is too much technical Debt to maintain it.
+The FAForever website has accumulated significant technical debt, making it increasingly challenging to maintain. 
 
-So My new approach to this is that the main pages of the website move towards being static and using GHPages which would allow for easier updating of links ect and moving parts of the website we have now into Smaller Self-contained models using the webserver we already have as the microservices require a dynamic style and need to be deployed by the server team when ready this way we can have a static site that is not requiring of the FAF servers and then when thier are issued the static site remains but all the modules go offline.
+To address this, I propose a new approach: transitioning the main pages of the website to a static format using GitHub Pages (GHPages). This shift will facilitate easier updates to links and enable the migration of existing website components into smaller, self-contained modules. These modules will utilize our current web server, as the microservices require a dynamic architecture and need to be deployed by the server team when ready. By adopting a static site model, we can ensure that the main website remains operational even if issues arise with the dynamic modules.
 
-So the new Goal is as follows:
+### New Goals
 
-Core - Core is all the static pages that would be a part of the GHPages version of the site (Updated Generated on Merge)
-Modules - these are the different parts of the website that need to be used or pulled from the API and have access the the Dynamic context. (Required Server admins to update)
+- **Core**: This will encompass all static pages that form part of the GHPages version of the site, which will be updated automatically upon merging.
+- **Modules**: These are the various components of the website that require API integration and access to dynamic content. Updates to these modules will require action from server administrators.
 
-The will contain the following structure:
-_Anything that is not Static will have (Module) at the end of them_
+#### Structure
+- Any non-static components will be designated with "(Module)" at the end of their names.
 
-[Static Layout](https://github.com/MrRowey/FAF4.0/wiki)
+For more information, please refer to the [Static Layout](https://github.com/MrRowey/FAF4.0/wiki).
 
-This New approach to the website will allow us to cover the 2 purposes of the website that were decided by the association.
-1. To Focus on Acquiring and On-boarding new Player into FAForever (Registration of players, Documentation & Support)
-2. Promote The Community (Clans, Maps, Mods, Tournaments etc.)
+### Purpose of the Website
+This new approach will help us achieve two primary objectives established by the association:
+1. **Player Acquisition and Onboarding**: Focus on registering players, providing documentation, and offering support.
+2. **Community Promotion**: Highlight clans, maps, mods, tournaments, and other community-driven initiatives.
 
+## Updates and Features for the Website
+This section will be updated with guidelines on how to maintain the static site and create new functionalities.
 
-## Updating and Features for the website
-This will be updated accordingly on how to update the static site and how to go about creating new functionality for the site.
+## Rules Going Forward
+1. Ensure the core site is simple and easy to update.
+2. Reduce technical debt.
+3. Document all changes either in code comments or through a wiki page in the repository.
+4. Ensure that each module is self-contained.
 
-
-# Rules going forward
-1. Simple and Easy to update the Core site
-2. Reduce Technical Debt
-3. Document either incode or via wiki page on the repository
-4. The module should be self-contained
-
-
-# Software
-## Core
+## Software Stack
+### Core
 - HTML
 - CSS
-- JS
+- JavaScript
 
-## Modules
+### Modules
 - React
 - Webpack
-- webgpu?
-- chart.js
-- react hook form
+- WebGPU (tentative)
+- Chart.js
+- React Hook Form
 
-I'm sure the models will use more tools as development starts.
+As development progresses, the modules may incorporate additional tools and technologies.
